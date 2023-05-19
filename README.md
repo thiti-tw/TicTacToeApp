@@ -6,7 +6,7 @@
 | มีระบบฐานข้อมูลเก็บ history play ของเกมเพื่อดู replay ได้                                                     | ✔️ | 
 
 ---
- - ## เขียนเกม XO ด้วย Web หรือ Mobile App โดยให้เกมสามารถกำหนด ขนาดตารางของ XO นอกจาก 3x3 เป็นขนาดใด ๆ ก็ได้
+  ## เขียนเกม XO ด้วย Web หรือ Mobile App โดยให้เกมสามารถกำหนด ขนาดตารางของ XO นอกจาก 3x3 เป็นขนาดใด ๆ ก็ได้
 ```bash
  for (i in 0 until boardSize!!) {
             val innerLinearLayout = LinearLayout(this)
@@ -32,7 +32,7 @@
             }
         }
 ```
- - ## มีระบบฐานข้อมูลเก็บ history play ของเกมเพื่อดู replay ได้
+  ## มีระบบฐานข้อมูลเก็บ history play ของเกมเพื่อดู replay ได้
 ```bash
 //init database
 mHistoryViewModel = ViewModelProvider(this).get(HistoryViewModel::class.java)
@@ -44,7 +44,7 @@ private fun insertDataToDatabase() {
         mHistoryViewModel.addHistory(history)
     }
 ```
- - ## algorithm ที่ใช้ตรวจสอบการชนะ
+  ## algorithm ที่ใช้ตรวจสอบการชนะ
 ```bash
 private fun checkWin(x: Int, y: Int, moves: Array<Array<String>>, button: Button) {
         if (moves[x][y] == "") {
@@ -194,6 +194,6 @@ private fun checkWin(x: Int, y: Int, moves: Array<Array<String>>, button: Button
         }
     }
 ```
- - ## วิธีการ setup และ run โปรแกรม
+  ## วิธีการ setup และ run โปรแกรม
  * การ Run สามารถดาวน์โหลดไปแล้ว Run ได้เลย
  * การติดตั้งไฟล์ apk สำหรับมือถือ android หรือ simulator android ให้ดาวน์โหลดไฟล์ชื่อ app-debug.apk ไปติดตั้งบนมือถือ android หรือ simulator android ได้เลย
